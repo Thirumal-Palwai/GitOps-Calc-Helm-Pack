@@ -1,0 +1,24 @@
+apiVersion: v2
+name: helm
+description: A Parent Helm chart for Kubernetes
+type: application
+version: 0.1.0
+dependencies:
+- name: sum
+  repository: oci://public.ecr.aws/z8c2k6d0
+  version: 0.1.0
+- name: diff
+  repository: oci://public.ecr.aws/z8c2k6d0
+  version: 0.1.0
+- name: div
+  repository: oci://public.ecr.aws/z8c2k6d0
+  version: 0.1.0
+- name: multiply
+  repository: oci://public.ecr.aws/z8c2k6d0
+  version: 0.1.0
+- name: app
+  repository: oci://public.ecr.aws/z8c2k6d0
+  version: 0.1.0
+- name: client
+  repository: oci://public.ecr.aws/z8c2k6d0
+  version: 0.1.0
