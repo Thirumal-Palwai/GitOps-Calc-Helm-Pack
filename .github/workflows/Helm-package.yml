@@ -34,7 +34,7 @@ jobs:
       run: echo "ID=$(date +%s)" >> $GITHUB_ENV
     
     - name: Build Helm Package
-      run: helm dep up && helm package ./helm --app-version 0.1.0-image --version 0.1.0-$ID
+      run: helm dep up ./helm && helm package ./helm --app-version 0.1.0-image --version 0.1.0-$ID
     
     - name: Push the Helm Package
       run: helm push ./helm-* oci://public.ecr.aws/z8c2k6d0
